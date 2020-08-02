@@ -1,0 +1,107 @@
+//Header
+.da-header {
+    grid-area: da-header;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: $bg-header;
+    border-bottom: 1px solid #eff0f6;
+    transition: all 0.3s ease;
+
+    &--shadowbottom {
+        box-shadow: 0px 0px 40px 0px rgba(82, 63, 105, 0.1);
+    }
+
+    &__topbar {
+        display: flex;
+        align-items: stretch;
+        padding: 0;
+        padding-right: 15px;
+
+        &-item {
+            display: flex;
+            align-items: stretch;
+            margin: 0 0.1rem;
+        }
+
+        &-wrapper {
+            cursor: pointer;
+            display: flex;
+            align-items: stretch;
+        }
+
+        &-icon {
+            display: flex;
+            align-items: center;
+            align-self: center;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+
+            i {
+                transition: all 0.3s;
+                color: #b4b8ce;
+                font-size: 1.5rem;
+            }
+
+            .da-badge.da-badge--notify {
+                position: absolute;
+                left: 50%;
+                margin-left: -2px;
+                top: 5px;
+            }
+        }
+
+        &-item:hover &-icon {
+            transition: all 0.3s;
+            background-color: #f0f3ff;
+
+            i {
+                transition: all 0.3s;
+                color: #5d78ff;
+            }
+        }
+
+        &-user {
+            padding: 0 8px;
+            display: flex;
+            align-items: center;
+            align-self: center;
+            justify-content: center;
+            height: 50px;
+            border-radius: 50px;
+            cursor: pointer;
+
+            img {
+                align-self: center;
+                max-height: 38px;
+                max-width: 38px;
+                border-radius: 50%;
+            }
+        }
+
+        &-welcome {
+            display: flex;
+            align-self: center;
+            padding: 0 0.55rem 0 0;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            color: #959cb6;
+        }
+
+        &-username {
+            display: flex;
+            align-self: center;
+            padding: 0 0.55rem 0 0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s;
+            color: #6c7293;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import "variables";
+@import "bundle.scss";
+@import "sidebar";
+@import "header";
+@import "main";
+@import "footer";
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: $font-size-base;
+    font-weight: 300;
+    font-family: $font-family-sans-serif;
+    background-color: $bg-body;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $color-body;
+}
+
+.da-wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: $height-header 1fr $height-footer;
+    grid-template-areas:'da-header''da-main''da-footer';
+    height: 100vh;
+    overflow-x: hidden;
+
+    &--noscroll{
+        overflow-y: hidden;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    .da-wrapper {
+        display: grid;
+        grid-template-columns: $width-sidebar calc(100% - 240px);
+        grid-template-rows: $height-header 1fr $height-footer;
+        grid-template-areas:
+          'da-sidebar da-header'
+          'da-sidebar da-main'
+          'da-sidebar da-footer';
+        height: 100vh;
+      }
+}
