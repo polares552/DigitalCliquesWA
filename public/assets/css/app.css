@@ -11886,7 +11886,7 @@ a.text-dark:focus {
   position: relative;
   outline: none;
   cursor: pointer;
-  min-height: 44px;
+  min-height: 50px;
 }
 
 .da-menu__link-icon {

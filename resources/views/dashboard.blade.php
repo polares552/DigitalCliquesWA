@@ -101,7 +101,7 @@
 <!-- Container -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col col-xs-6">
+        <div class="col-md-6 col-lg-6 col-xs-6">
             <!-- Portlet Chart -->
             <div class="da-portlet da-portlet--height-fluid">
                 <div class="da-portlet__header">
@@ -126,7 +126,7 @@
             </div>
             <!-- End: Portlet Chart -->
         </div>
-        <div class="col col-xs-6">
+        <div class="col-md-6 col-lg-6 col-xs-6">
             <!-- Portlet About Panel -->
             <div class="da-portlet da-portlet--height-fluid">
                 <div class="da-portlet__header">
@@ -137,10 +137,10 @@
                 <div class="da-portlet__body da-portlet__body--fluid">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col p-0 text-center">
+                            <div class="col-md-12 col-lg-6 col-xs-4 p-0 text-center">
                                 <img src="{{ asset('media/about_panel.png') }}" alt="Sobre o Painel de Controle">
                             </div>
-                            <div class="col text-justify">
+                            <div class="col-md-12 col-lg-6 col-xs-8 text-justify">
                                 <p>Neste painel você poderá visualizar dados sobre seus clientes e seu negócio. Acima estão localizadas as métricas sobre seus clientes,
                                     tais como: total de clientes com acesso válido (data), inválidos (expirados), online e o total de clientes que estão sob seus cuidados.</p>
                                 <p>A esquerda temos há visualização do total de clientes recrutados no mês, este gráfico é atualizado constantemente de forma automâtica.</p>
